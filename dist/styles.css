@@ -1,6 +1,6 @@
-/*!*****************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
-  \*****************************************************************/
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./src/index.css ***!
+  \*********************************************************************************************/
 body {
   margin: 0;
   padding: 0;
@@ -18,10 +18,88 @@ button {
   margin: 5px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.faq_list {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .faq_list {
+    width: 100%;
+  }
+}
+
+.faq_list ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.faq_list li {
+  list-style-type: none;
+  background-color: #684125;
+  margin: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  color: #C58E67;
+  cursor: pointer;
+  max-width: 100%;
+  font-family: 'Judson', serif;
+}
+
+.faq_list li p {
+  background-color: #C58E67;
+  color: #F2D6C2;
+  padding: 10px;
+  font-family: 'Oranienbaum', serif;
+}
+
+.faq_list .img_block {
+  max-width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.faq_list .img_block img {
+  max-width: 45%;
+  margin: 1%;
+}
+
+.viewBtn {
+  background-color: #582906;
+  color: #C38E67;
+  margin: 10px;
+}
+
+.viewBtn:hover {
+  background: transparent;
+  color: #582906;
+  border: 1px solid #582906;
+}
+
+@media screen and (max-width: 700px) {
+  .viewBtn {
+    max-width: 100%;
+    margin: 7px auto;
+  }
+}
+
+.viewBtn a {
+  color: #C38E67;
+}
+
 h3 {
   color: #043931;
   text-transform: uppercase;
   font-family: 'Shrikhand', cursive;
+  margin: 10px;
 }
 
 @media screen and (max-width: 411px) {
@@ -33,7 +111,7 @@ h3 {
 header {
   max-width: 100%;
   height: 400px;
-  background-image: url(90434142dbcde5c251e1.jpg);
+  background-image: url("img/head.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -55,7 +133,7 @@ header nav {
 }
 
 header nav #logo {
-  width: 12%;
+  max-width: 15%;
   height: auto;
 }
 
@@ -75,6 +153,12 @@ header nav #list {
 header nav .nav-link {
   padding: 10px;
   align-self: center;
+}
+
+@media screen and (max-width: 300px) {
+  header nav .nav-link {
+    padding: 5px;
+  }
 }
 
 header nav .nav-link a {
@@ -215,7 +299,7 @@ section .block .icon {
   font-size: 2em;
 }
 
-article {
+#article_home {
   max-width: 100%;
   padding: 12px;
   font-family: 'Oranienbaum', serif;
@@ -224,40 +308,21 @@ article {
 }
 
 @media screen and (min-width: 1000px) {
-  article {
+  #article_home {
     font-size: 1.6vw;
     line-height: 1.2em;
   }
 }
 
-article img {
+#article_home img {
   max-width: 30%;
   float: left;
   margin-right: 15px;
 }
 
 @media screen and (min-width: 1000px) {
-  article img {
+  #article_home img {
     max-width: 25%;
-  }
-}
-
-article #viewBtn {
-  background-color: #582906;
-  color: #C38E67;
-  margin: 10px;
-}
-
-article #viewBtn:hover {
-  background: transparent;
-  color: #582906;
-  border: 1px solid #582906;
-}
-
-@media screen and (max-width: 700px) {
-  article #viewBtn {
-    max-width: 100%;
-    margin: 7px auto;
   }
 }
 
@@ -297,11 +362,11 @@ article #viewBtn:hover {
   padding: 25%;
   text-align: center;
   box-sizing: border-box;
+  z-index: 10000;
 }
 
 .gallery #galleryBtn {
   background-color: #C58E67;
-  color: #5A2906;
   width: 100%;
   margin: 0;
   text-align: center;
@@ -405,6 +470,7 @@ form button:hover {
 }
 
 footer {
+  clear: both;
   max-width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -421,6 +487,12 @@ footer p {
   font-size: 1.3em;
 }
 
+@media screen and (max-width: 700px) {
+  footer p {
+    font-size: 1em;
+  }
+}
+
 footer p img {
   width: 50px;
   height: auto;
@@ -431,6 +503,12 @@ footer ul {
   color: #C58E67;
   width: 32%;
   font-size: 1.3em;
+}
+
+@media screen and (max-width: 700px) {
+  footer ul {
+    font-size: 1em;
+  }
 }
 
 footer ul li {
@@ -447,3 +525,327 @@ footer ul li a:hover {
   color: #3CAA9E;
 }
 
+.none {
+  display: none;
+}
+
+#ab_b {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-image: url("img/PjOHkoghxTc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  #ab_b {
+    height: auto;
+  }
+}
+
+#ab_b h2 {
+  text-align: right;
+  text-transform: uppercase;
+  font-family: 'Shrikhand', cursive;
+  color: white;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+#ab_b p {
+  color: white;
+  max-width: 40%;
+  float: right;
+  text-align: right;
+  font-family: 'Oranienbaum', serif;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 700px) {
+  #ab_b p {
+    display: block;
+    float: none;
+    font-size: 0.9em;
+    max-width: 100%;
+    text-align: right;
+    margin: auto;
+  }
+}
+
+#article_about {
+  max-width: 100%;
+  font-family: 'Oranienbaum', serif;
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  #article_about {
+    flex-flow: column nowrap;
+  }
+}
+
+#article_about p {
+  max-width: 45%;
+  padding: 5px;
+  margin: 0;
+  align-self: center;
+}
+
+@media screen and (max-width: 1000px) {
+  #article_about p {
+    max-width: 100%;
+  }
+}
+
+#article_about #galleryPrew {
+  max-width: 45%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #article_about #galleryPrew {
+    flex-flow: row nowrap;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+}
+
+#article_about #galleryPrew img {
+  width: 25%;
+  height: auto;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  #article_about #galleryPrew img {
+    max-width: 13%;
+    margin: 1%;
+  }
+}
+
+.logoBlock {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 100%;
+  max-height: 15%;
+}
+
+.contact_block {
+  max-width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .contact_block {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact_block form {
+    max-width: 100%;
+  }
+}
+
+.contact_block .adress {
+  max-width: 45%;
+}
+
+@media screen and (max-width: 400px) {
+  .contact_block .adress {
+    max-width: 100%;
+  }
+}
+
+.gallery_container {
+  max-width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery_container {
+    flex-flow: column nowrap;
+  }
+}
+
+.gallery_container #gallery_pr {
+  max-width: 45%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery_container #gallery_pr {
+    flex-flow: row nowrap;
+    max-width: none;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.gallery_container #gallery_pr img {
+  max-width: 25%;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery_container #gallery_pr img {
+    max-width: none;
+    width: 10%;
+    margin: 0.5%;
+    box-sizing: border-box;
+  }
+}
+
+.gallery_container .faq_list {
+  display: block;
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery_container .faq_list {
+    width: 100%;
+  }
+}
+
+.gallery_container .faq_list ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery_container .faq_list li {
+  list-style-type: none;
+  background-color: #684125;
+  margin: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  color: #C58E67;
+  cursor: pointer;
+  max-width: 100%;
+  font-family: 'Judson', serif;
+}
+
+.gallery_container .faq_list li p {
+  background-color: #C58E67;
+  color: #F2D6C2;
+  padding: 10px;
+  font-family: 'Oranienbaum', serif;
+}
+
+.gallery_container .faq_list .img_block {
+  max-width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.gallery_container .faq_list .img_block img {
+  max-width: 45%;
+  margin: 1%;
+}
+
+.slider {
+  max-width: 100%;
+  height: 200px;
+  display: block;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 540px) {
+  .slider {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    height: 150px;
+  }
+}
+
+.slider .imgContainer {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  position: absolute;
+  bottom: 0;
+  transition: 400ms linear;
+}
+
+.slider img {
+  flex: 0 0 auto;
+  max-width: 15%;
+  max-height: auto;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.slider #arrowLeft {
+  position: absolute;
+  top: 45%;
+  left: 2%;
+  z-index: 100000;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.slider #arrowRight {
+  position: absolute;
+  top: 45%;
+  left: 95%;
+  z-index: 100000;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/*!**************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./src/resizImage.css ***!
+  \**************************************************************************************************/
+.resizeImage {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.resizeImage img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.closeButn {
+    color: #42002a;
+    font-weight: 900;
+    font-size: 50px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 1010;
+    cursor: pointer;
+}
