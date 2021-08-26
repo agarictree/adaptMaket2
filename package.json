@@ -1,0 +1,35 @@
+{
+    "name": "adaptive-maket",
+    "author": "ormhild@gmail.com",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "webpack --config webpack.config.js",
+        "dev": "webpack-dev-server",
+        "start": "webpack serve --mode development --open --hot"
+    },
+    "dependencies": {
+        "@babel/core": "^7.15.0",
+        "@babel/polyfill": "^7.12.1",
+        "@babel/preset-env": "^7.15.0",
+        "@babel/preset-react": "^7.14.5",
+        "babel": "^6.23.0",
+        "babel-loader": "^8.2.2",
+        "bootstrap": "^5.1.0",
+        "copy-webpack-plugin": "^9.0.1",
+        "css-loader": "^6.2.0",
+        "file-loader": "^6.2.0",
+        "html-webpack-plugin": "^5.3.2",
+        "mini-css-extract-plugin": "^2.2.0",
+        "postcss-loader": "^6.1.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-router": "^5.2.0",
+        "react-router-dom": "^5.2.0",
+        "sass-loader": "^12.1.0",
+        "style-loader": "^3.2.1",
+        "webpack": "^5.50.0",
+        "webpack-cli": "^4.8.0",
+        "webpack-dev-server": "^3.11.2",
+        "webpack-template-plugin": "^0.1.4"
+    }
+}
